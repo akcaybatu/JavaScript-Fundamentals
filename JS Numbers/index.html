@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+    <h1>JavaScript Numbers</h1>
+    <!--
+    <h4>Numbers we can write with JavaScript.</h4>
+    <p id="demo"></p>
+    <p id="demo-2"></p>
+    <p id="demo-3"></p>
+    <p id="demo-4"></p>
+    <p id="demo-5"></p>
+    <script>
+        let x = 3;
+        let y = 4;
+        document.getElementById("demo").innerHTML = x + "<br>" + y;
+
+        let z = 123e5;
+        let k = 123e-5;
+        document.getElementById("demo-2").innerHTML = z + "<br>" + k;
+
+        //JS tam sayıları 15 haneye kadar destekler//
+        let m = 999999999999999;
+        let n = 9999999999999999;
+        document.getElementById("demo-3").innerHTML = m + "<br>" + n;
+
+        //JS ondalık sayıları 17 haneye kadar destekler fakat sayılar daima doğru olmayabilir//
+        let p = 0.2 + 0.1;
+        document.getElementById("demo-4").innerHTML = p;
+
+        //Yukarıda karşılaşılan problemi çözmek için 10 ile çarpılıp tekrar bölünebilir//
+        let f = (0.2 * 10 + 0.1 * 10) / 10;
+        document.getElementById("demo-5").innerHTML = "0.2 + 0.1 = " + f;
+    </script>
+     -->
+
+     <!--
+     <h4>Numbers and Strings</h4>
+     <p id="demo"></p>
+     <p id="demo-2"></p>
+     <p id="demo-3"></p>
+     <p id="demo-4"></p>
+     <p id="demo-5"></p>
+     <script>
+         let x = 10;
+         let y = 20;
+         let z = x + y;
+         document.getElementById("demo").innerHTML = z;
+
+        let l = "10";
+        let m = "20";
+        let n = l + m;
+        document.getElementById("demo-2").innerHTML = n;
+
+        let a = 20;
+        let b = "30";
+        let c = a + b;
+        document.getElementById("demo-3").innerHTML = c;
+
+        //Genel olarak yapılan hata//
+        let f = 10;
+        let g = 20;
+        document.getElementById("demo-4").innerHTML = "The result is: " + f + g;
+
+        //Diğer bir yaygın hata//
+        let e = 10;
+        let u = 20;
+        let i = "30";
+        document.getElementById("demo-5").innerHTML = e + u + i;
+     </script>
+     -->
+
+     <!--
+     <h4>Numeric Strings</h4>
+     <p id="demo"></p>
+     <p id="demo-2"></p>
+     <script>
+        let x = 100; // x bir numaradır //
+        let y = "100"; // y bir dizidir //
+        document.getElementById("demo").innerHTML = x + "<br>" + y;
+
+        // Eğer matematiksel işlemler kullanırsan JS sayıları numaralara dönüştürmeyi dener//
+        let z = "100";
+        let v = "10";
+        let p = z / v;
+        document.getElementById("demo-2").innerHTML = p;
+        //Bu durum çarpma, bölme ve çıkarma işlemlerinde işe yarar fakat +'da yaramaz bunun sebebi +'nın dizileri birleştirmek için kullanılmasıdır.//
+     </script>
+     -->
+
+     <!--
+     <h4>NaN - Not a Number</h4>
+     <p id="demo"></p>
+     <p id="demo-2"></p>
+     <p id="demo-3"></p>
+     <p id="demo-4"></p>
+     <p id="demo-5"></p>
+     <p id="demo-6"></p>
+     <p id="demo-7"></p>
+     <script>
+         //Stringler ile bölme işlemi yapamayız bu yüzden NaN yani legal olmayan numara uyarısı çıkar//
+         document.getElementById("demo").innerHTML = 100 / "Apple";
+         document.getElementById("demo-2").innerHTML = "Orange" * "Cherry";
+
+         //Eğer stringimizin içerisinde bir numara varsa numeric komutlar işe yarar//
+         document.getElementById("demo-3").innerHTML = 100 - "10";
+
+         //isNaN kullanarak numara NaN mı değil mi sorgulayabilirsin//
+         let x = 100 / "Grape";
+         document.getElementById("demo-4").innerHTML = isNaN(x); 
+
+         //NaN hesap içerisinde kullanılırsa aşağıdaki durumlar ortaya çıkar//
+         let y = NaN;
+         let z = 100;
+         document.getElementById("demo-5").innerHTML = y + z;
+
+         let a = NaN;
+         let b = "Lemon"
+         document.getElementById("demo-6").innerHTML = a + b;
+
+         let k = NaN
+         document.getElementById("demo-7").innerHTML = typeof k;
+     </script>
+     -->
+
+     <!--
+     <h4>Infinity</h4>
+     <p id="demo"></p>
+     <p id="demo-2"></p>
+     <p id="demo-3"></p>
+     <script>
+         // Numaramız Infınity'e eşit olmadığı sürece alttaki işlemleri uygular//
+         let myNumber = 2;
+         let txt = "";
+         while (myNumber != Infinity){
+             myNumber = myNumber * myNumber;
+             txt = txt + myNumber + "<br>";
+         }
+         document.getElementById("demo").innerHTML = txt;
+
+         let x = 2/0;
+         let y = -2/0;
+         document.getElementById("demo-2").innerHTML = x + "<br>" + y;
+
+         //Infinity numara olarak gözükür//
+         let z = Infinity;
+         document.getElementById("demo-3").innerHTML = typeof z;
+     </script>
+     -->
+
+     <!--
+     <h4>Number Can Be Objects</h4>
+     <p id="demo"></p>
+     <p id="demo-2"></p>
+     <p id="demo-3"></p>
+     <p id="demo-4"></p>
+     <script>
+         let x = 123;
+         let y = new Number (123);
+         document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y;
+
+         // == Equal yani denk demektir. Örneğin 500'lerden herhangi birini farklı bir sayıya çevirirsen çıktı "false" olur //
+         let a = 500;
+         let b = new Number (500);
+         document.getElementById("demo-2").innerHTML = (a==b);
+
+         // === eşit tip ve değer anlamına gelir yani yukarıda olduğu gibi 500 ler denk olsa da aynı tip olmayacağı için "false" çıktısı verir //
+         let c = 400;
+         let d = new Number (400);
+         document.getElementById("demo-3").innerHTML = (c===d);
+
+         // Sık yapılabilen bir hata objelerin karşılaştırılmasıdır. Fakat objeler karşılaştırılamaz (=== için de aynı sonuç çıkar) //
+         let e = new Number (300);
+         let f = new Number (300);
+         document.getElementById("demo-4").innerHTML = (e==f);
+     </script>
+     -->
+
+     <!--
+     <h4>Practice</h4>
+     <script>
+         console.log("Hello, World!")
+         console.log(23 + 97)
+         console.log(1 + 2 + 3 + 4 + 5 + 6 + 7)
+         console.log((4 + 6 + 9) / 77)
+         let a = 10;
+         console.log(a)
+         console.log(9 * a)
+         let b = 7 * a;
+         console.log(b)
+         let max = 57;
+         let actual = max - 13;
+         let percentage = actual / max;
+         console.log(percentage)
+     </script>
+     -->
+</body>
+</html>
