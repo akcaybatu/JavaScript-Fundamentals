@@ -30,6 +30,7 @@
         myGreeting();
     </script>
     -->
+    <!--
     <script>
     let myNumber = Math.random(); // gives random number between 0 and 1
     alert(myNumber);
@@ -42,6 +43,28 @@
     let madeAString = myArray.join(" ");
     alert(myArray);
     alert(madeAString);
+    </script>
+    -->
+    <script>
+        let x = 1;
+
+        function a() {
+        let y = 2;
+        output(y);
+        }
+
+        function b() {
+        let z = 3;
+        output(z);
+        }
+
+        function output(value) {
+        const para = document.createElement('p');
+        document.body.appendChild(para);
+        para.textContent = 'Value: ' + value;
+
+        // open console and type a(); and b();
+        }
     </script>
 </body>
 </html>
