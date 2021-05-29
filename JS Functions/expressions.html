@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function selamVer(){
+            alert("Merhaba");
+        }
+        alert(selamVer); // eğer (selamver()) şeklinde yazarsan fonksiyonu çalıştırır. Fakat bu şekilde fonksiyon değerini verir.
+
+        function selamAl(){
+            alert('Sana da Merhaba');
+        }
+        let func = selamAl;
+
+        func();
+        selamAl();
+    </script>
+</body>
+</html>
