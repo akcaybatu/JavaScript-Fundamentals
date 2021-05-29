@@ -27,6 +27,7 @@
     </script>
     -->
     <!-- veya -->
+    <!--
     <script>
         function sor(soru, evet, hayır){
             if (confirm(soru))
@@ -39,6 +40,22 @@
             function() {alert("Kabul ettiniz!");},
             function() {alert("Reddettiniz!");}
         );
+    </script>
+    -->
+    <script>
+        //selamVer("Ahmet"); // hata! fakat bu satır fonksiyonun altında olsaydı çalışırdı
+                           // fonksiyonlar javascript çalıştırılırken tanımlanır ve her yerde kullanılabilir
+                           // buradaki gibi kullandığımızda değişken olarak tanımlandığı için çalışmaz
+        //let selamVer = function(adi) {  // (*) büyü ortadan kalktı
+        //alert( `Merhaba, ${adi}` );
+        //};
+
+
+        // buradaki gibi kullanmak doğru bir kullanım şeklidir
+        selamVer("Ahmet");
+        function selamVer(isim){
+            alert ( `Merhaba, ${isim}` );
+        }
     </script>
 </body>
 </html>
