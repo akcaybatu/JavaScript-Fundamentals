@@ -14,3 +14,10 @@ function factorial(n){
     }
 }
 console.log(factorial(8));
+/* Mantığı
+return --> factorial(4) * 5
+       --> factorial(3) * 4
+       --> factorial(2) * 3
+       --> factorial(1) * 2
+       --> factorial(0) * 1
+*/
