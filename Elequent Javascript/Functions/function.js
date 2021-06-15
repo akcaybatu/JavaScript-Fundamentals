@@ -19,3 +19,12 @@ const power = function(base, exponent){
     return result;
 };
 console.log(power(2,10));
+
+
+function greet(who) {
+    console.log("Hello " + who);
+    }
+    greet("Harry");
+    console.log("Bye");
+
+        
