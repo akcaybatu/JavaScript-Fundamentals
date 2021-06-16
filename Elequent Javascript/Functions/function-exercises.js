@@ -1,0 +1,22 @@
+// Min value
+function min(num1, num2){
+    console.log(Math.min(num1, num2));
+}
+min(1,2);
+
+// Recursion even and odd
+function isEven(num) {
+    if (num == 0){
+        return true;
+    }
+    else if (num == 1){
+        return false;
+    }
+    else if (num < 0){
+        return isEven(num + 2);
+    }
+    else{ 
+        return isEven(num - 2);
+    }
+}
+console.log(isEven(-50));
