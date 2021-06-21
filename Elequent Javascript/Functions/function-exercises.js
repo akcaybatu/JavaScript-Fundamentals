@@ -29,7 +29,7 @@ function countBs(bean){
             n += 1;
         }
     }    
-    console.log(n);
+    return n;
 }
 countBs("BaBaBa");
 
@@ -40,6 +40,6 @@ function countChar(beanny, letter){
             m += 1;
         }
     }    
-    console.log(m);
+    return m;
 }
 countChar("BaBaBaaaaaa", "a");

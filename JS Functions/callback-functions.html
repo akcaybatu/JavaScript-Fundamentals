@@ -42,6 +42,7 @@
         );
     </script>
     -->
+    <!--
     <script>
         //selamVer("Ahmet"); // hata! fakat bu satır fonksiyonun altında olsaydı çalışırdı
                            // fonksiyonlar javascript çalıştırılırken tanımlanır ve her yerde kullanılabilir
@@ -52,10 +53,31 @@
 
 
         // buradaki gibi kullanmak doğru bir kullanım şeklidir
-        selamVer("Ahmet");
-        function selamVer(isim){
-            alert ( `Merhaba, ${isim}` );
+        //selamVer("Ahmet");
+        //function selamVer(isim){
+            //alert ( `Merhaba, ${isim}` );
+        //}
+    </script>
+    -->
+    <button onclick="myFunction()">Taş</button>
+    <button id="b2">Kağıt</button>
+    <button id="b3">Makas</button>
+    <script>
+        function myFunction() {
+            let months = ["Taş", "Kağıt", "Makas"];
+            let random = Math.floor(Math.random() * months.length);
+            if (random = 0){
+                alert("Berabere");
+            }
+            else if(random == 1){
+                alert ("Kaybettiniz");
+            }
+            else{
+                alert ("Kazandınız");
+            }
         }
+
+
     </script>
 </body>
 </html>
