@@ -7,77 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <!--
-    <script>
-        function sor(soru, evet, hayır){
-            if(confirm(soru))
-            evet()
-            else hayır();
-        }
-
-        function tamamGoster(){
-            alert("Kabul Ettiniz!");
-        }
-
-        function iptalGoster(){
-            alert("Reddettiniz.");
-        }
-
-        sor("Kabul Ediyor musunuz?", tamamGoster, iptalGoster);
-    </script>
-    -->
-    <!-- veya -->
-    <!--
-    <script>
-        function sor(soru, evet, hayır){
-            if (confirm(soru))
-            evet()
-            else hayır()
-        }
-
-        sor(
-            "Kabul Ediyor musunuz?",
-            function() {alert("Kabul ettiniz!");},
-            function() {alert("Reddettiniz!");}
-        );
-    </script>
-    -->
-    <!--
-    <script>
-        //selamVer("Ahmet"); // hata! fakat bu satır fonksiyonun altında olsaydı çalışırdı
-                           // fonksiyonlar javascript çalıştırılırken tanımlanır ve her yerde kullanılabilir
-                           // buradaki gibi kullandığımızda değişken olarak tanımlandığı için çalışmaz
-        //let selamVer = function(adi) {  // (*) büyü ortadan kalktı
-        //alert( `Merhaba, ${adi}` );
-        //};
-
-
-        // buradaki gibi kullanmak doğru bir kullanım şeklidir
-        //selamVer("Ahmet");
-        //function selamVer(isim){
-            //alert ( `Merhaba, ${isim}` );
-        //}
-    </script>
-    -->
     <button onclick="myFunction()">Taş</button>
     <button id="b2">Kağıt</button>
     <button id="b3">Makas</button>
-    <script>
-        function myFunction() {
-            let months = ["Taş", "Kağıt", "Makas"];
-            let random = Math.floor(Math.random() * months.length);
-            if (random = 0){
-                alert("Berabere");
-            }
-            else if(random == 1){
-                alert ("Kaybettiniz");
-            }
-            else{
-                alert ("Kazandınız");
-            }
-        }
 
-
-    </script>
+    <script src="callback-function.js"></script>
 </body>
 </html>
